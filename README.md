@@ -9,7 +9,7 @@ Se trabaja con 3 entidades basicas de un sistema de productos.
 1. **Clona el repositorio**:
    
    ```bash
-   git clone https://github.com/tu_usuario/tu_repositorio.git
+   git clone https://github.com/devjuanbenitez/api-rest-springboot
    cd tu_repositorio
 2. **Inicia la aplicación con Docker Compose**
    
