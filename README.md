@@ -19,8 +19,9 @@ Para ejecutar esta aplicación, necesitarás tener instalado:
    git clone https://github.com/devjuanbenitez/api-rest-springboot
    cd api-rest-springboot
 
-3. **Genera el archivo JAR con Maven Wrapper**:
-   En el directorio raíz del proyecto:
+3. **Genera el archivo JAR con Maven**:
+   
+   En el directorio raíz del proyecto ejecutar:
 
    ```bash
    ./mvnw clean install
