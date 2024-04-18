@@ -1,0 +1,21 @@
+version: '3'
+services:
+  postgres:
+    image: postgres
+    container_name: db_postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: admin
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+
+  api-spring-aplicacion:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: api-spring-aplicacion
+    ports:
+      - "8080:8080"  # Puerto en el que se ejecuta tu aplicación Spring Boot
+    depends_on:
+      - postgres  # Dependencia de la base de datos PostgreSQL
