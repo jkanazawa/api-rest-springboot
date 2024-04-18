@@ -10,7 +10,7 @@ Se trabaja con 3 entidades basicas de un sistema de productos.
    
    ```bash
    git clone https://github.com/devjuanbenitez/api-rest-springboot
-   cd tu_repositorio
+   cd api-rest-springboot
 2. **Inicia la aplicación con Docker Compose**
    
    ```bash
