@@ -2,8 +2,15 @@
 
 Se trabaja con 3 entidades basicas de un sistema de productos.
 
+## Requisitos del Sistema
+
+Para ejecutar esta aplicación, necesitarás tener instalado:
+
+- Java Development Kit (JDK) versión 17.
+
 ## Base de datos
 ![App Screenshot](/img/bd.png)
+
 
 ## Ejecutar con Docker
 1. **Clona el repositorio**:
@@ -11,6 +18,13 @@ Se trabaja con 3 entidades basicas de un sistema de productos.
    ```bash
    git clone https://github.com/devjuanbenitez/api-rest-springboot
    cd api-rest-springboot
+
+3. **Genera el archivo JAR con Maven Wrapper**:
+   En el directorio raíz del proyecto:
+
+   ```bash
+   ./mvnw clean install
+   
 2. **Inicia la aplicación con Docker Compose**
    
    ```bash
