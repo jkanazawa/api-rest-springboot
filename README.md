@@ -1,4 +1,4 @@
-# Servicio rest con Spring Boot
+# Servicio rest con Spring Boot.
 
 Se trabaja con 3 entidades basicas de un sistema de productos.
 
