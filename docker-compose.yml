@@ -19,3 +19,16 @@ services:
       - "8080:8080"  # Puerto en el que se ejecuta tu aplicación Spring Boot
     depends_on:
       - postgres  # Dependencia de la base de datos PostgreSQL
+  
+  api-python-aplication:
+    build:
+      dockerfile: apiPython/Dockerfile
+      context: .
+    container_name: api-python-aplication
+    ports:
+      - "8000:8000"  # Puerto en el que se ejecuta tu aplicación Spring Boot
+    command: bash -c "python manage.py makemigrations --noinput &&
+                      python manage.py migrate --noinput &&
+                      python manage.py runserver"
+    depends_on:
+      - postgres  # Dependencia de la base de datos PostgreSQL

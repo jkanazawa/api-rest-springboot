@@ -81,7 +81,7 @@ DATABASES = {
         'NAME': 'inventario', #change it databasename
         'USER': 'postgres', #change it database user name
         'PASSWORD': 'admin', # change user database password
-        'HOST': 'localhost',  
+        'HOST': 'db_postgres',  
         'PORT': '5432',           
     }
 }
